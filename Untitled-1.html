@@ -1,89 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mengenal Javascript</title>
-    <script defer>
-      function test() {
-        let val = document.kirim.t1.value;
-        if (val % 2 === 0) {
-          document.kirim.t2.value = "Bilangan Genap";
-        } else {
-          document.kirim.t2.value = "Bilangan Ganjil";
-        }
-      }
-    </script>
-  </head>
-  <body>
-    <form action="" name="kirim">
-      <label for="bilangan">Bilangan</label>
-      <input type="number" name="t1" size="10" />
-      <br />
-      <br />
-      <label for="genap-ganjil">Merupakan</label>
-      <input type="text" name="t2" size="20" disabled />
-      <input type="button" name="b1" value="tebak" onclick="test()" />
-    </form>
-    <hr />
+
+<head>
+    <title>Daftar Menu</title>
     <script>
-      function ubahlatar(val) {
-        if (val === "green") {
-          document.bgColor = val;
-        } else if (val === "white") {
-          document.bgColor = val;
+        function hitung(ele) {
+            var total = document.getElementById('total').value;
+            total = (total ? parseInt(total) : 0);
+            var harga = 0;
+
+            if (ele.checked) {
+                harga = ele.value;
+                total += parseInt(harga);
+            } else {
+                harga = ele.value;
+                if (total > 0)
+                    total -= parseInt(harga);
+
+            }
+
+            document.getElementById('total').value = total;
         }
-      }
-      function ubahteks(val) {
-        if (val === "yellow") {
-          document.fgColor = val;
-        } else if (val === "blue") {
-          document.fgColor = val;
-        }
-      }
     </script>
-    <form action="">
-      <input
-        type="button"
-        value="Latar belakang hijau"
-      />
-      <input
-        type="button"
-        value="Latar belakang putih"
-        onclick="ubahlatar('white')"
-      />
-      <input type="button" value="Teks kuning" onclick="ubahteks('yellow')" />
-      <input type="button" value="Teks biru" onclick="ubahteks('blue')" />
-    </form>
-    <hr />
-    <script>
-      let total = document.getElementById("total");
-      let harga = 0;
-      function hitung(elemen) {
-        console.log(elemen.value);
-        if (elemen.checked) {
-          harga = elemen.value;
-          total += parseInt(harga);
-        } else {
-          if (elemen.value > 0) {
-            harga = elemen.value;
-            total -= parseInt(harga);
-          }
-        }
-        document.getElementById("total").value = total;
-      }
-    </script>
-    <h1>Daftar Menu</h1>
-    <label for="menu1">Ayam Goreng Rp. 5.000</label>
-    <input type="checkbox" value="5000" id="menu1" onclick="hitung(this)" />
-    <br />
-    <label for="menu2">Tempe Goreng Rp. 500</label>
-    <input type="checkbox" value="500" id="menu2" onclick="hitung(this)" />
-    <br />
-    <label for="menu3">Telur dadar Rp. 2.500</label>
-    <input type="checkbox" value="2500" id="menu3" onclick="hitung(this)" />
-    <br />
-    <label for="total">Total</label>
-    <input type="number" id="total" value="0" disabled />
-  </body>
+</head>
+
+<body>
+    <h1>Daftar Menu Makanan</h1>
+    <label><input type="checkbox" value="5000" id="menu1" onclick="hitung(this);" />Ayam Goreng Rp. 5.000</label><br />
+    <label><input type="checkbox" value="500" id="menu2" onclick="hitung(this);" />Tempe Goreng Rp. 500</label><br />
+    <label><input type="checkbox" value="2500" id="menu3" onclick="hitung(this);" />Tempe Dadar Rp. 2.500</label><br />
+    <strong>Total bayar: Rp. <input id="total" type="text" /></strong>
+</body>
+
 </html>

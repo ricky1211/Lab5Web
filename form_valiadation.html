@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validation with Javascript</title>
-    <script src="./form-validation.js" defer></script>
-  </head>
-  <body>
-    <h1>Form Validation with JavaScript</h1>
-    <h2>Hello</h2>
-    <form>
-      <fieldset>
-        <legend>Input your identity</legend>
-        <label for="name">Your full name : </label>
-        <input type="text" size="20" id="name" minlength="20"/>
-        <br /><br />
-        <label for="email">Email :</label>
-        <input type="email" size="20" id="email"/>
-        <br /><br />
-        <button type="submit" id="submit">Submit</button>
-      </fieldset>
-    </form>
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Validation</h2>
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" class="error"></span>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <span id="emailError" class="error"></span>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error"></span>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      // Ambil nilai dari input
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Bersihkan pesan error
+      document.getElementById("nameError").innerHTML = "";
+      document.getElementById("emailError").innerHTML = "";
+      document.getElementById("passwordError").innerHTML = "";
+
+      // Validasi nama
+      if (name === "") {
+        document.getElementById("nameError").innerHTML = "Nama harus diisi";
+        return false;
+      } else if (name.length === 1) {
+        document.getElementById("nameError").innerHTML = "Nama minimal 2 karakter";
+        return false;
+      } else if (name.length > 30) {
+        document.getElementById("nameError").innerHTML = "Nama tidak boleh lebih dari 30 karakter";
+        return false;
+      }
+
+      // Validasi email
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email === "") {
+        document.getElementById("emailError").innerHTML = "Email harus diisi";
+        return false;
+      } else if (!emailRegex.test(email)) {
+        document.getElementById("emailError").innerHTML = "Email tidak valid";
+        return false;
+      }
+
+      // Validasi password
+      if (password.length < 8) {
+        document.getElementById("passwordError").innerHTML = "Password harus minimal 8 karakter";
+        return false;
+      }
+
+      // Form valid
+      alert("Form berhasil diverifikasi!");
+      return true;
+    }
+  </script>
+
+</body>
 </html>
