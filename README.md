@@ -121,7 +121,7 @@
 ```
 **Hasil :**
 
-![0.1](Gambar/4.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(365).png?raw=true)
 
 **Hasil Setelah kita klik OK :**
 
@@ -187,7 +187,7 @@ Operasi dasar aritmatika.
 ```
 **Hasil :**
 
-![0.1](Gambar/7.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(366).png?raw=true)
 
 **Hasil Setelah kita klik OK :**
 
