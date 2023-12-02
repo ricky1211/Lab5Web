@@ -20,9 +20,11 @@
 
 **Hasil tugas :**
 
-![T](Gambar/Tugas.png) 
-![T](Gambar/Tugas.png) 
-![T](Gambar/Tugas.png) 
+![T](https://github.com/ricky1211/Lab5Web/blob/main/LAB5/Screenshot%20(364).png?raw=true) 
+![T](https://github.com/ricky1211/Lab5Web/blob/main/LAB5/Screenshot%20(346).png?raw=true) 
+![T](https://github.com/ricky1211/Lab5Web/blob/main/LAB5/Screenshot%20(347).png?raw=true) 
+![T](https://github.com/ricky1211/Lab5Web/blob/main/LAB5/Screenshot%20(348).png?raw=true) 
+![T](https://github.com/ricky1211/Lab5Web/blob/main/LAB5/Screenshot%20(349).png?raw=true) 
 
 
 # Langkah-langkah Praktikum
@@ -48,7 +50,7 @@
 ```
 **Hasil :**
 
-![0.1](Gambar/1.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(350).png?raw=true)
 
 #### *Note :*
 
@@ -72,7 +74,7 @@
 ```
 **Hasil :**
 
-![0.1](Gambar/2.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(351).png?raw=true)
 
 #### *Note :*
 
@@ -96,7 +98,7 @@
 ```
 **Hasil :**
 
-![0.1](Gambar/3.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(352).png?raw=true)
 
 #### *Note :*
 
@@ -123,57 +125,8 @@
 
 **Hasil Setelah kita klik OK :**
 
-![0.1](Gambar/4.1.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(353).png?raw=true)
 
-#### *Note :*
-
-## Pemakaian Alert sebagai property window
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alert box</title>
-</head>
-<body>
-    <!-- Pemakaian Alert sebagai property window -->
-    <script language = "javascript">
-        window.alert("ini merupakan pesan untuk anda")
-    </script>
-</body>
-</html>
-```
-**Hasil :**
-
-![0.1](Gambar/2.png)
-
-#### *Note :*
-
-## Pembuatan fungsi dan cara pemanggilannya
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contoh program JavaScript</title>
-    <script language = "javascript">
-        function pesan(){
-            alert("memanggil javascript lewat body onload")
-        }
-    </script>
-</head>
-<body onload=pesan()>
-    
-</body>
-</html>
-```
-**Hasil :**
-
-![0.1](Gambar/5.png)
-
-#### *Note :*
 
 ## Dasar Pemrograman Di Javascript
 ```HTML
@@ -205,7 +158,7 @@
 ```
 **Hasil :**
 
-![0.1](Gambar/6.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(354).png?raw=true)
 
 #### *Note :*
 Operasi dasar aritmatika.
@@ -238,7 +191,7 @@ Operasi dasar aritmatika.
 
 **Hasil Setelah kita klik OK :**
 
-![0.1](Gambar/7.1.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(355).png?raw=true)
 
 #### *Note :*
 
@@ -283,7 +236,9 @@ Operasi dasar aritmatika.
 ```
 **Hasil :**
 
-![0.1](Gambar/8.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(356).png?raw=true)
+**Setelah di tekan ok :**
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(357).png?raw=true)
 
 #### *Note :*
 
@@ -317,7 +272,7 @@ Operasi dasar aritmatika.
 ```
 **Hasil :**
 
-![0.1](Gambar/9.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(358).png?raw=true)
 
 #### *Note :*
 Form Input
@@ -364,7 +319,10 @@ Form Input
 ```
 **Hasil :**
 
-![0.1](Gambar/10.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(359).png?raw=true)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(360).png?raw=true)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(361).png?raw=true)
+
 
 #### *Note :*
 
@@ -408,7 +366,8 @@ Form Input
 ```
 **Hasil :**
 
-![0.1](Gambar/11.png)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(362).png?raw=true)
+![0.1](https://github.com/ricky1211/Lab5Web/blob/main/LAB5Tes/Screenshot%20(363).png?raw=true)
 
 #### *Note :*
 Pilihan menggunakan checkBox dengan perhitungan otomatis
